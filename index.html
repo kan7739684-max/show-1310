@@ -27,6 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap&subset=cyrillic">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/price181.css">
 <script src="js/config.js"></script>
 <!-- Яндекс Метрика: вставить код счётчика сюда, когда будет решение (сейчас не подключена)
 <script>/* (function(m,e,t,r,i,k,a)Ellipsis)(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(XXXXXXXX, "init", Ellipsis); */</script>
@@ -354,6 +355,57 @@
   </div>
 </section>
 
+<!-- Интерактив «Сколько стоит одно занятие» (css/price181.css, js/price181.js) -->
+<section class="p181" id="cena" data-p181 aria-labelledby="p181-title">
+  <div class="p181-wrap">
+    <div class="p181-head">
+      <span class="p181-label">Простая арифметика</span>
+      <h2 id="p181-title">Сколько стоит одно занятие?</h2>
+    </div>
+
+    <div class="p181-card" data-state="idle">
+      <div class="p181-split">
+        <div class="p181-counter" aria-hidden="true">
+          <div class="p181-num"><span class="p181-val">2&nbsp;900</span>&nbsp;₽<span class="p181-div">÷&nbsp;<b>1</b></span></div>
+          <div class="p181-sub">вступительный взнос</div>
+        </div>
+        <ol class="p181-grid" aria-label="16 занятий: 4 вебинара интенсива и 12 занятий с экспертами"></ol>
+        <ul class="p181-legend">
+          <li><i class="b"></i>4 вебинара интенсива</li>
+          <li><i class="g"></i>12 занятий с&nbsp;экспертами</li>
+        </ul>
+        <button class="p181-play" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>Разложить на&nbsp;занятия
+        </button>
+      </div>
+
+      <div class="p181-compare" aria-hidden="true">
+        <div class="p181-toggle" role="group" aria-label="Цена одного занятия">
+          <button type="button" data-mode="usual" aria-pressed="true">Обычно</button>
+          <button type="button" data-mode="soyuz" aria-pressed="false">В&nbsp;Союзе</button>
+          <span class="p181-knob" aria-hidden="true"></span>
+        </div>
+        <div class="p181-stage" data-mode="usual">
+          <div class="p181-stack" aria-hidden="true"><span class="p181-ghost"></span></div>
+          <div class="p181-price">
+            <b class="p181-pu">от&nbsp;1&nbsp;000&nbsp;₽</b>
+            <b class="p181-ps">181&nbsp;₽</b>
+            <span>за&nbsp;занятие</span>
+          </div>
+        </div>
+        <div class="p181-final">
+          <div class="p181-badge">в&nbsp;5,5&nbsp;раза выгоднее</div>
+          <div class="p181-actions">
+            <a class="p181-cta" href="https://cinematoschool.ru/iimatograf_pay" data-goal="soyuz_pay_click" target="_blank" rel="noopener">Вступить в&nbsp;Союз<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <button class="p181-replay" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Разобрать ещё раз</button>
+          </div>
+        </div>
+      </div>
+      <p class="p181-sr" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
 <section class="alt" id="faq">
   <div class="wrap">
     <div class="sec-head reveal"><div class="ring-deco"></div><span class="sec-label">Вопросы</span><h2>Частые вопросы</h2></div>
@@ -405,5 +457,6 @@
 <div class="sticky" id="sticky"><a class="btn" href="#forma" data-reg data-goal="show_reg_click">Зарегистрироваться бесплатно</a></div>
 
 <script src="js/main.js"></script>
+<script src="js/price181.js"></script>
 </body>
 </html>

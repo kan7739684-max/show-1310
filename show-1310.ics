@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//IIMATOGRAF//show-1310//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:show-1310-20261013@kan7739684-max.github.io
+DTSTAMP:20261004T120000Z
+DTSTART;TZID=Europe/Moscow:20261013T180000
+DTEND;TZID=Europe/Moscow:20261013T193000
+SUMMARY:Шоу «Искусственный интеллект для ду
+ ши\, творчества и вдохновения»
+DESCRIPTION:Бесплатное онлайн-шоу ИИМАТОГРАФ. 
+ Сбор гостей с 17:50 МСК. Ссылку на Zoom пришлё
+ м на почту и в Telegram-канал до 13 октября: https
+ ://t.me/+AKOOHI-GBakxNzUy
+LOCATION:Zoom (ссылка придёт на почту)
+URL:https://kan7739684-max.github.io/show-1310/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Через 30 минут шоу ИИМАТОГРАФ
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

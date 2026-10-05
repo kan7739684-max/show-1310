@@ -27,8 +27,8 @@
     if (regReady) { a.href = withUtm(REG); if (cfg.REG_NEW_TAB) { a.target = '_blank'; a.rel = 'noopener'; } }
     /* пока адрес не задан, кнопки ведут к блоку регистрации (#forma) */
   });
-  /* кнопки оплаты Союза тоже несут UTM текущего визита */
-  document.querySelectorAll('a[href*="iimatograf_pay"]').forEach(function(a){ a.href = withUtm(a.href); });
+  /* кнопки «Вступить в Союз» (лендинг Союза) тоже несут UTM текущего визита */
+  document.querySelectorAll('a[href*="iimatograf-landing"]').forEach(function(a){ a.href = withUtm(a.href); });
 
   /* видео: обложка + загрузка плеера по клику (быстрая загрузка страницы) */
   document.querySelectorAll('[data-vimeo]').forEach(function(b){

@@ -1,6 +1,6 @@
 (function(){
-  /* обратный отсчёт до 13.10.2026 18:00 МСК (UTC+3) */
-  var T = Date.UTC(2026,9,13,15,0,0);
+  /* обратный отсчёт до 03.11.2026 18:00 МСК (UTC+3) */
+  var T = Date.UTC(2026,10,3,15,0,0);
   function tick(){
     var s = Math.max(0, Math.floor((T - Date.now())/1000));
     var d = Math.floor(s/86400), h = Math.floor(s%86400/3600), m = Math.floor(s%3600/60);

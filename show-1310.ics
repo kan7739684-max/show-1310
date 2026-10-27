@@ -13,12 +13,13 @@ TZNAME:MSK
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:show-1310-20261013@kan7739684-max.github.io
-DTSTAMP:20261004T120000Z
-DTSTART;TZID=Europe/Moscow:20261013T180000
-DTEND;TZID=Europe/Moscow:20261013T193000
-SUMMARY:Вебинар «Мой первый мультфильм с ней
- росетью за один вечер»
+UID:show-1310-20261103@kan7739684-max.github.io
+DTSTAMP:20261027T210000Z
+DTSTART;TZID=Europe/Moscow:20261103T180000
+DTEND;TZID=Europe/Moscow:20261103T193000
+SUMMARY:Вебинар «Как создавать и анимироват
+ ь уникальных ИИ-персонажей для своих ист
+ орий»
 DESCRIPTION:Бесплатный вебинар ИИМАТОГРАФ. Сб
  ор гостей с 17:50 МСК. Ссылку на Zoom пришлём 
  на почту и в Telegram-канал за 1 час до начала 

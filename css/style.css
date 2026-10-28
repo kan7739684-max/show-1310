@@ -325,8 +325,9 @@ footer{padding:36px 0 calc(90px + env(safe-area-inset-bottom));border-top:1px so
 .partners b{color:#fff;font-size:1rem;line-height:1.3}
 .partners small{color:var(--muted);font-size:.82rem;line-height:1.35}
 .partner-logo{display:flex;align-items:center;justify-content:center;min-height:110px}
-.partner-logo a{display:flex;align-items:center;justify-content:center}
+.partner-logo a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
 .partner-logo img{width:112px;height:112px;object-fit:contain;display:block}
+.partner-logo b{max-width:11em}
 .logo-ph{display:grid;place-items:center;width:120px;height:52px;margin-bottom:6px;border-radius:10px;border:1.5px dashed rgba(201,191,174,.55);font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--muted)}
 .license{display:flex;gap:16px;align-items:flex-start;text-align:left;margin:16px 0 0;padding:20px 22px;border-radius:18px;border:1px solid rgba(246,200,106,.5);background:linear-gradient(135deg,rgba(138,90,43,.3),rgba(95,184,255,.12));box-shadow:0 0 40px rgba(246,200,106,.12)}
 .license svg{width:34px;height:34px;flex:none;color:var(--gold);margin-top:2px}

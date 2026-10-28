@@ -58,7 +58,7 @@
 
   /* липкая кнопка на мобильном: после первого экрана, скрыта у формы и финального блока */
   var sticky = document.getElementById('sticky'), heroBtn = document.querySelector('.hero .btn'),
-      hide = [document.getElementById('forma'), document.getElementById('final')];
+      hide = [document.getElementById('forma'), document.getElementById('final')].filter(Boolean);
   function onScroll(){
     var hb = heroBtn.getBoundingClientRect();
     var near = hide.some(function(el){ var r = el.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; });
